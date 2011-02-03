@@ -1,13 +1,21 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/MacPorts 2010_0) (format=pdflatex 2010.11.23)  2 DEC 2010 19:15
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/MacPorts 2010_1) (format=pdflatex 2011.1.28)  3 FEB 2011 15:28
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"Project X.ltx"
-(./Project X.ltx
+**"X Web.ltx"
+(./X Web.ltx
 LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, lo
-aded.
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ar
+abic, farsi, pinyin, croatian, bulgarian, russian, ukrainian, czech, slovak, da
+nish, dutch, ukenglish, usenglishmax, finnish, basque, french, german-x-2009-06
+-19, ngerman-x-2009-06-19, german, ngerman, swissgerman, monogreek, greek, anci
+entgreek, ibycus, hungarian, assamese, bengali, gujarati, hindi, kannada, malay
+alam, marathi, oriya, panjabi, tamil, telugu, sanskrit, italian, latin, latvian
+, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, coptic, esperanto, esto
+nian, icelandic, indonesian, interlingua, irish, kurmanji, romanian, serbian, s
+lovenian, turkish, uppersorbian, welsh, lao, armenian, polish, portuguese, span
+ish, catalan, galician, swedish, turkmen, loaded.
 (/opt/local/share/texmf-texlive-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/opt/local/share/texmf-texlive-dist/tex/latex/base/size11.clo
@@ -44,8 +52,8 @@ Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 17.
 
-(./Project X.aux)
-\openout1 = `"Project X.aux"'.
+(./X Web.aux)
+\openout1 = `"X Web.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
@@ -65,29 +73,43 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 25.
- (./Project X.toc
+ (./X Web.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 3.
 )
 \tf@toc=\write3
-\openout3 = `"Project X.toc"'.
+\openout3 = `"X Web.toc"'.
 
  [1
 
 {/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (33.91454pt too wide) in paragraph at lines 56--67
+ [] 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 76.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 72.
 (/opt/local/share/texmf-texlive-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 72.
  [2]
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 80--81
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 82--83
+[]$[]$ 
+ []
+
+
 Overfull \hbox (18.34999pt too wide) in paragraph at lines 84--85
 []$[]$ 
  []
@@ -118,53 +140,54 @@ Overfull \hbox (18.34999pt too wide) in paragraph at lines 94--95
  []
 
 
-Overfull \hbox (5.00343pt too wide) in paragraph at lines 105--106
-[]\OT1/cmr/m/n/10.95 Any/All user, disk, net-work etc. I/O must be ``solid":
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 96--97
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 98--99
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 100--101
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 102--103
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 104--105
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 106--107
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 108--109
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 110--111
+[]$[]$ 
  []
 
 [3]
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 113--114
-[]$[]$ 
+Overfull \hbox (5.00343pt too wide) in paragraph at lines 122--123
+[]\OT1/cmr/m/n/10.95 Any/All user, disk, net-work etc. I/O must be ``solid":
  []
 
 
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 115--116
-[]$[]$ 
- []
-
-
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 117--118
-[]$[]$ 
- []
-
-
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 119--120
-[]$[]$ 
- []
-
-
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 121--122
-[]$[]$ 
- []
-
-
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 123--124
-[]$[]$ 
- []
-
-
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 125--126
-[]$[]$ 
- []
-
-
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 127--128
-[]$[]$ 
- []
-
-
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 129--130
-[]$[]$ 
+Overfull \hbox (6.61124pt too wide) in paragraph at lines 122--123
+\OT1/cmr/m/n/10.95 and checked/unchecked ex-cep-tion han-dling where ap-pro-pri
+-ate. (\OT1/cmr/bx/n/10.95 Bonus\OT1/cmr/m/n/10.95 :
  []
 
 
@@ -222,7 +245,7 @@ Overfull \hbox (18.34999pt too wide) in paragraph at lines 151--152
 []$[]$ 
  []
 
-
+[4]
 Overfull \hbox (18.34999pt too wide) in paragraph at lines 153--154
 []$[]$ 
  []
@@ -242,7 +265,17 @@ Overfull \hbox (18.34999pt too wide) in paragraph at lines 159--160
 []$[]$ 
  []
 
-[4]
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 161--162
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 163--164
+[]$[]$ 
+ []
+
+
 Overfull \hbox (18.34999pt too wide) in paragraph at lines 165--166
 []$[]$ 
  []
@@ -278,61 +311,51 @@ Overfull \hbox (18.34999pt too wide) in paragraph at lines 177--178
  []
 
 
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 179--180
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 183--184
 []$[]$ 
  []
 
 
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 181--182
-[]$[]$ 
- []
-
-[5]
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 213--214
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 185--186
 []$[]$ 
  []
 
 
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 215--216
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 187--188
 []$[]$ 
  []
 
 
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 217--218
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 189--190
 []$[]$ 
  []
 
 
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 219--220
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 191--192
 []$[]$ 
  []
 
 
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 221--222
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 193--194
 []$[]$ 
  []
 
 
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 223--224
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 195--196
 []$[]$ 
  []
 
 
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 225--226
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 197--198
 []$[]$ 
  []
 
 
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 227--228
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 199--200
 []$[]$ 
  []
 
-
-Overfull \hbox (18.34999pt too wide) in paragraph at lines 229--230
-[]$[]$ 
- []
-
-
+[5] [6]
 Overfull \hbox (18.34999pt too wide) in paragraph at lines 231--232
 []$[]$ 
  []
@@ -352,15 +375,60 @@ Overfull \hbox (18.34999pt too wide) in paragraph at lines 237--238
 []$[]$ 
  []
 
-AED: lastpage setting LastPage [6] (./Project X.aux) ) 
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 239--240
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 241--242
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 243--244
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 245--246
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 247--248
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 249--250
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 251--252
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 253--254
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.34999pt too wide) in paragraph at lines 255--256
+[]$[]$ 
+ []
+
+AED: lastpage setting LastPage [7] [8] (./X Web.aux) ) 
 Here is how much of TeX's memory you used:
- 404 strings out of 495074
- 4709 string characters out of 3182081
- 52959 words of memory out of 3000000
- 3639 multiletter control sequences out of 15000+200000
+ 404 strings out of 493747
+ 4665 string characters out of 3143115
+ 54638 words of memory out of 3000000
+ 3754 multiletter control sequences out of 15000+200000
  9510 words of font info for 33 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 31i,13n,43p,493b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 714 hyphenation exceptions out of 8191
+ 31i,14n,43p,527b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
 </opt/local/share/texmf-t
 exlive-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/local/share/texmf-t
 exlive-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-t
@@ -370,10 +438,10 @@ live-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/local/share/texmf-texl
 ive-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></opt/local/share/texmf-texl
 ive-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texl
 ive-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Project X.pdf" (6 pages, 121762 bytes).
+Output written on "X Web.pdf" (8 pages, 124105 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
