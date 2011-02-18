@@ -1,0 +1,36 @@
+<%= form_for(@song) do |f| %>
+  <% if @song.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@song.errors.count, "error") %> prohibited this song from being saved:</h2>
+
+      <ul>
+      <% @song.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :runtime %><br />
+    <%= f.text_field :runtime %>
+  </div>
+
+
+	<div class="field">
+		<% albums = Album.all.collect {|i| [ h(i.name), i.id ] } %>
+		<%= f.label :album_id %>
+		<%= f.select(:album_id, albums, { :include_blank => false, :selected => @song.album_id }, :id => "song_#{@song.id}") %>
+	</div>
+	
+
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

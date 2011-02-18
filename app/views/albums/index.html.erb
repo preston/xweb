@@ -1,0 +1,37 @@
+<h1>All My Albums</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Year</th>
+    <th>Songs</th>
+		<th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @albums.each do |album| %>
+  <tr>
+    <td><%= album.name %></td>
+    <td><%= album.description %></td>
+    <td><%= album.year %></td>
+		<td>
+			
+		  <ol>
+			<% album.songs.each do |song| %>
+			    <li><%= song.name %> (<%= song.runtime %>)</li>
+			<% end %>
+	  	</ol>
+		
+		</td>
+    <td><%= link_to 'Show', album %></td>
+    <td><%= link_to 'Edit', edit_album_path(album) %></td>
+    <td><%= link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Album', new_album_path %>

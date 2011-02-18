@@ -1,0 +1,1842 @@
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 16:40:03 -0700
+
+ActionController::RoutingError (No route matches "/"):
+  
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 16:45:25 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.6ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+SQLite3::SQLException: no such table: albums: SELECT "albums".* FROM "albums"
+Completed   in 72ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: albums: SELECT "albums".* FROM "albums"):
+  app/controllers/albums_controller.rb:5:in `index'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateAlbums (20110217234450)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "year" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110217234450')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("albums")
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateAlbums (20110217234450)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("albums")
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 16:56:17 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+Rendered albums/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 14ms (Views: 6.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 16:56:27 -0700
+
+ActionController::RoutingError (No route matches "/"):
+  
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 16:56:32 -0700
+
+ActionController::RoutingError (No route matches "/"):
+  
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 16:57:15 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.4ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered albums/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 13ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 16:57:26 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+Rendered albums/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 13ms (Views: 5.8ms | ActiveRecord: 0.4ms)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (2.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateAlbums (20110217234450)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) NOT NULL, "description" varchar(255) NOT NULL, "year" integer NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("albums")
+  [1m[36mSQL (0.1ms)[0m  [1mCREATE INDEX "index_albums_on_name" ON "albums" ("name")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("albums")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_albums_on_name')[0m
+  [1m[35mSQL (0.2ms)[0m  CREATE INDEX "index_albums_on_description" ON "albums" ("description")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20110217234450')[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("albums")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_albums_on_description')
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_albums_on_name')[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateAlbums (20110217234450)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("albums")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_albums_on_description')
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_albums_on_name')[0m
+  [1m[35mSQL (0.8ms)[0m  DROP INDEX "index_albums_on_name"
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("albums")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_albums_on_description')
+  [1m[36mSQL (0.4ms)[0m  [1mDROP INDEX "index_albums_on_description"[0m
+  [1m[35mSQL (0.2ms)[0m  DROP TABLE "albums"
+  [1m[36mAREL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20110217234450'[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateAlbums (20110217234450)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) NOT NULL, "description" varchar(255) NOT NULL, "year" integer NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("albums")
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE INDEX "index_albums_on_name" ON "albums" ("name")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("albums")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_albums_on_name')[0m
+  [1m[35mSQL (0.2ms)[0m  CREATE INDEX "index_albums_on_description" ON "albums" ("description")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20110217234450')[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("albums")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_albums_on_description')
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_albums_on_name')[0m
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 17:08:25 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.3ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered albums/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/albums/new" for 127.0.0.1 at 2011-02-17 17:08:31 -0700
+  Processing by AlbumsController#new as HTML
+Rendered albums/_form.html.erb (9.9ms)
+Rendered albums/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 58ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/albums" for 127.0.0.1 at 2011-02-17 17:08:44 -0700
+  Processing by AlbumsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "album"=>{"name"=>"My Album 1", "description"=>"aoeu aoeu aoeuaoeuaoeu", "year"=>"2011"}, "commit"=>"Create Album"}
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "albums" ("name", "description", "year", "created_at", "updated_at") VALUES ('My Album 1', 'aoeu aoeu aoeuaoeuaoeu', 2011, '2011-02-18 00:08:44.577673', '2011-02-18 00:08:44.577673')[0m
+Redirected to http://localhost:3000/albums/1
+Completed 302 Found in 59ms
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2011-02-17 17:08:44 -0700
+  Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1
+Rendered albums/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 24ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 17:08:51 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.4ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered albums/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 19ms (Views: 14.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/albums/new" for 127.0.0.1 at 2011-02-17 17:08:54 -0700
+  Processing by AlbumsController#new as HTML
+Rendered albums/_form.html.erb (5.8ms)
+Rendered albums/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 49ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/albums" for 127.0.0.1 at 2011-02-17 17:09:06 -0700
+  Processing by AlbumsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "album"=>{"name"=>"MA2", "description"=>"aeu aoeuaoeuaoeuo", "year"=>"2000"}, "commit"=>"Create Album"}
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "albums" ("name", "description", "year", "created_at", "updated_at") VALUES ('MA2', 'aeu aoeuaoeuaoeuo', 2000, '2011-02-18 00:09:06.732240', '2011-02-18 00:09:06.732240')
+Redirected to http://localhost:3000/albums/2
+Completed 302 Found in 55ms
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2011-02-17 17:09:06 -0700
+  Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlbum Load (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1[0m
+Rendered albums/show.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 21ms (Views: 14.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 17:09:12 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+Rendered albums/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/albums/2/edit" for 127.0.0.1 at 2011-02-17 17:09:15 -0700
+  Processing by AlbumsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlbum Load (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1[0m
+Rendered albums/_form.html.erb (8.4ms)
+Rendered albums/edit.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 52ms (Views: 42.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 17:09:19 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+Rendered albums/index.html.erb within layouts/application (44.8ms)
+Completed 200 OK in 54ms (Views: 48.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/albums/new" for 127.0.0.1 at 2011-02-17 17:09:21 -0700
+  Processing by AlbumsController#new as HTML
+Rendered albums/_form.html.erb (7.7ms)
+Rendered albums/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 26ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/albums" for 127.0.0.1 at 2011-02-17 17:09:28 -0700
+  Processing by AlbumsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "album"=>{"name"=>"MA3", "description"=>"", "year"=>"2004"}, "commit"=>"Create Album"}
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "albums" ("name", "description", "year", "created_at", "updated_at") VALUES ('MA3', '', 2004, '2011-02-18 00:09:28.455183', '2011-02-18 00:09:28.455183')[0m
+Redirected to http://localhost:3000/albums/3
+Completed 302 Found in 19ms
+
+
+Started GET "/albums/3" for 127.0.0.1 at 2011-02-17 17:09:28 -0700
+  Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAlbum Load (0.1ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 3 LIMIT 1
+Rendered albums/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 48ms (Views: 10.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/albums/3/edit" for 127.0.0.1 at 2011-02-17 17:09:31 -0700
+  Processing by AlbumsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAlbum Load (0.4ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 3 LIMIT 1[0m
+Rendered albums/_form.html.erb (33.2ms)
+Rendered albums/edit.html.erb within layouts/application (37.3ms)
+Completed 200 OK in 51ms (Views: 41.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/albums/3" for 127.0.0.1 at 2011-02-17 17:09:34 -0700
+  Processing by AlbumsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "album"=>{"name"=>"", "description"=>"", "year"=>"2004"}, "commit"=>"Update Album", "id"=>"3"}
+  [1m[35mAlbum Load (0.1ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 3 LIMIT 1
+  [1m[36mAREL (0.5ms)[0m  [1mUPDATE "albums" SET "name" = '', "updated_at" = '2011-02-18 00:09:34.864268' WHERE "albums"."id" = 3[0m
+Redirected to http://localhost:3000/albums/3
+Completed 302 Found in 18ms
+
+
+Started GET "/albums/3" for 127.0.0.1 at 2011-02-17 17:09:34 -0700
+  Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAlbum Load (0.1ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 3 LIMIT 1
+Rendered albums/show.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 19ms (Views: 10.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 17:09:53 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.6ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered albums/index.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 49ms (Views: 40.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 17:12:54 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+Rendered albums/index.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 47ms (Views: 41.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/albums/new" for 127.0.0.1 at 2011-02-17 17:12:55 -0700
+  Processing by AlbumsController#new as HTML
+Rendered albums/_form.html.erb (8.5ms)
+Rendered albums/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 24ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/albums" for 127.0.0.1 at 2011-02-17 17:13:00 -0700
+  Processing by AlbumsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "album"=>{"name"=>"MA2", "description"=>"!!!", "year"=>"1234"}, "commit"=>"Create Album"}
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "albums" ("name", "description", "year", "created_at", "updated_at") VALUES ('MA2', '!!!', 1234, '2011-02-18 00:13:00.463088', '2011-02-18 00:13:00.463088')[0m
+Redirected to http://localhost:3000/albums/4
+Completed 302 Found in 23ms
+
+
+Started GET "/albums/4" for 127.0.0.1 at 2011-02-17 17:13:00 -0700
+  Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 4 LIMIT 1
+Rendered albums/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 61ms (Views: 15.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 17:13:01 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.4ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered albums/index.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 48ms (Views: 39.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/albums/new" for 127.0.0.1 at 2011-02-17 17:13:42 -0700
+  Processing by AlbumsController#new as HTML
+Rendered albums/_form.html.erb (7.5ms)
+Rendered albums/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 24ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/albums" for 127.0.0.1 at 2011-02-17 17:13:46 -0700
+  Processing by AlbumsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "album"=>{"name"=>"MA2", "description"=>"aoeu", "year"=>""}, "commit"=>"Create Album"}
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums"."id" FROM "albums" WHERE ("albums"."name" = 'MA2') LIMIT 1
+Rendered albums/_form.html.erb (6.2ms)
+Rendered albums/new.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 64ms (Views: 38.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/albums" for 127.0.0.1 at 2011-02-17 17:14:27 -0700
+  Processing by AlbumsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "album"=>{"name"=>"MA3", "description"=>"aoeu", "year"=>"2323432"}, "commit"=>"Create Album"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1mSELECT "albums"."id" FROM "albums" WHERE ("albums"."name" = 'MA3') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "albums" ("name", "description", "year", "created_at", "updated_at") VALUES ('MA3', 'aoeu', 2323432, '2011-02-18 00:14:27.647535', '2011-02-18 00:14:27.647535')
+Redirected to http://localhost:3000/albums/5
+Completed 302 Found in 23ms
+
+
+Started GET "/albums/5" for 127.0.0.1 at 2011-02-17 17:14:27 -0700
+  Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 5 LIMIT 1[0m
+Rendered albums/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 26ms (Views: 14.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 17:14:29 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+Rendered albums/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 53ms (Views: 15.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 17:14:55 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.5ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered albums/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 53ms (Views: 41.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/albums/4/edit" for 127.0.0.1 at 2011-02-17 17:15:09 -0700
+  Processing by AlbumsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 4 LIMIT 1
+Rendered albums/_form.html.erb (34.8ms)
+Rendered albums/edit.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 54ms (Views: 42.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/albums/4" for 127.0.0.1 at 2011-02-17 17:15:19 -0700
+  Processing by AlbumsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "album"=>{"name"=>"MA2", "description"=>"!!!", "year"=>"2012"}, "commit"=>"Update Album", "id"=>"4"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 4 LIMIT 1[0m
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums"."id" FROM "albums" WHERE ("albums"."name" = 'MA2') AND ("albums".id <> 4) LIMIT 1
+Rendered albums/_form.html.erb (5.5ms)
+Rendered albums/edit.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 62ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/albums/4" for 127.0.0.1 at 2011-02-17 17:15:45 -0700
+  Processing by AlbumsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "album"=>{"name"=>"MA4", "description"=>"!!!", "year"=>"2012"}, "commit"=>"Update Album", "id"=>"4"}
+  [1m[36mAlbum Load (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 4 LIMIT 1[0m
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums"."id" FROM "albums" WHERE ("albums"."name" = 'MA4') AND ("albums".id <> 4) LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE "albums" SET "name" = 'MA4', "year" = 2012, "updated_at" = '2011-02-18 00:15:46.015290' WHERE "albums"."id" = 4[0m
+Redirected to http://localhost:3000/albums/4
+Completed 302 Found in 21ms
+
+
+Started GET "/albums/4" for 127.0.0.1 at 2011-02-17 17:15:46 -0700
+  Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 4 LIMIT 1
+Rendered albums/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 23ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 17:15:49 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.4ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered albums/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 22ms (Views: 14.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/albums/5" for 127.0.0.1 at 2011-02-17 17:16:13 -0700
+  Processing by AlbumsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "id"=>"5"}
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 5 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM "albums" WHERE "albums"."id" = 5[0m
+Redirected to http://localhost:3000/albums
+Completed 302 Found in 49ms
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 17:16:13 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.6ms)[0m  SELECT "albums".* FROM "albums"
+Rendered albums/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 26ms (Views: 16.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/albums/4" for 127.0.0.1 at 2011-02-17 17:16:14 -0700
+  Processing by AlbumsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "id"=>"4"}
+  [1m[36mAlbum Load (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 4 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  DELETE FROM "albums" WHERE "albums"."id" = 4
+Redirected to http://localhost:3000/albums
+Completed 302 Found in 17ms
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 17:16:14 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.4ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered albums/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 52ms (Views: 16.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/albums/3" for 127.0.0.1 at 2011-02-17 17:16:18 -0700
+  Processing by AlbumsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "id"=>"3"}
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 3 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM "albums" WHERE "albums"."id" = 3[0m
+Redirected to http://localhost:3000/albums
+Completed 302 Found in 50ms
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 17:16:18 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.5ms)[0m  SELECT "albums".* FROM "albums"
+Rendered albums/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 22ms (Views: 12.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/albums/new" for 127.0.0.1 at 2011-02-17 17:16:20 -0700
+  Processing by AlbumsController#new as HTML
+Rendered albums/_form.html.erb (5.9ms)
+Rendered albums/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 19ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/albums" for 127.0.0.1 at 2011-02-17 17:16:26 -0700
+  Processing by AlbumsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "album"=>{"name"=>"a3", "description"=>"rcheuc", "year"=>"2083"}, "commit"=>"Create Album"}
+  [1m[36mAlbum Load (0.1ms)[0m  [1mSELECT "albums"."id" FROM "albums" WHERE ("albums"."name" = 'a3') LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "albums" ("name", "description", "year", "created_at", "updated_at") VALUES ('a3', 'rcheuc', 2083, '2011-02-18 00:16:27.044980', '2011-02-18 00:16:27.044980')
+Redirected to http://localhost:3000/albums/6
+Completed 302 Found in 22ms
+
+
+Started GET "/albums/6" for 127.0.0.1 at 2011-02-17 17:16:27 -0700
+  Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAlbum Load (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 6 LIMIT 1[0m
+Rendered albums/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 18ms (Views: 10.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 17:16:28 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.5ms)[0m  SELECT "albums".* FROM "albums"
+Rendered albums/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 26ms (Views: 18.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/albums.html" for 127.0.0.1 at 2011-02-17 17:16:40 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.4ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered albums/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 21ms (Views: 15.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/albums.xml" for 127.0.0.1 at 2011-02-17 17:16:50 -0700
+  Processing by AlbumsController#index as XML
+  [1m[35mAlbum Load (0.5ms)[0m  SELECT "albums".* FROM "albums"
+Completed 200 OK in 50ms (Views: 42.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/albums.js" for 127.0.0.1 at 2011-02-17 17:17:03 -0700
+  Processing by AlbumsController#index as JS
+  [1m[36mAlbum Load (0.5ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Completed 406 Not Acceptable in 7ms
+
+
+Started GET "/albums.js%5C%5C%5C" for 127.0.0.1 at 2011-02-17 17:17:24 -0700
+  Processing by AlbumsController#index as 
+  [1m[35mAlbum Load (0.6ms)[0m  SELECT "albums".* FROM "albums"
+Completed 406 Not Acceptable in 10ms
+
+
+Started GET "/albums.html" for 127.0.0.1 at 2011-02-17 17:17:29 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.5ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered albums/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 24ms (Views: 14.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 17:17:31 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+Rendered albums/index.html.erb within layouts/application (43.7ms)
+Completed 200 OK in 54ms (Views: 46.8ms | ActiveRecord: 0.4ms)
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateAlbums (20110217234450)
+Migrating to CreateSongs (20110218003259)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) NOT NULL, "runtime" integer, "album_id" integer NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110218003259')
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  PRAGMA index_list("albums")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_albums_on_description')[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_albums_on_name')
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("songs")[0m
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateAlbums (20110217234450)
+Migrating to CreateSongs (20110218003259)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("albums")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_info('index_albums_on_description')[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_info('index_albums_on_name')
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("songs")[0m
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateSongs (20110218003259)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "songs"[0m
+  [1m[35mAREL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20110218003259'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("albums")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_albums_on_description')[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_albums_on_name')
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateAlbums (20110217234450)
+Migrating to CreateSongs (20110218003259)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) NOT NULL, "runtime" integer, "album_id" integer NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110218003259')
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("albums")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_albums_on_description')[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_albums_on_name')
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("songs")[0m
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 17:34:51 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.4ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+Rendered songs/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 13ms (Views: 8.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 17:34:53 -0700
+  Processing by SongsController#new as HTML
+Rendered songs/_form.html.erb (6.0ms)
+Rendered songs/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 22ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2011-02-17 17:34:56 -0700
+  Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "song"=>{"name"=>"", "runtime"=>"", "album_id"=>""}, "commit"=>"Create Song"}
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "songs" ("name", "runtime", "album_id", "created_at", "updated_at") VALUES ('', NULL, NULL, '2011-02-18 00:34:56.881219', '2011-02-18 00:34:56.881219')[0m
+SQLite3::ConstraintException: songs.album_id may not be NULL: INSERT INTO "songs" ("name", "runtime", "album_id", "created_at", "updated_at") VALUES ('', NULL, NULL, '2011-02-18 00:34:56.881219', '2011-02-18 00:34:56.881219')
+Completed   in 19ms
+
+ActiveRecord::StatementInvalid (SQLite3::ConstraintException: songs.album_id may not be NULL: INSERT INTO "songs" ("name", "runtime", "album_id", "created_at", "updated_at") VALUES ('', NULL, NULL, '2011-02-18 00:34:56.881219', '2011-02-18 00:34:56.881219')):
+  app/controllers/songs_controller.rb:46:in `block in create'
+  app/controllers/songs_controller.rb:45:in `create'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.1ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2011-02-17 17:36:27 -0700
+  Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "song"=>{"name"=>"", "runtime"=>"", "album_id"=>""}, "commit"=>"Create Song"}
+Completed   in 18ms
+
+NoMethodError (undefined method `album' for #<Song:0x00000102139e50>):
+  app/controllers/songs_controller.rb:46:in `block in create'
+  app/controllers/songs_controller.rb:45:in `create'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2011-02-17 17:37:19 -0700
+  Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "song"=>{"name"=>"s1", "runtime"=>"42", "album_id"=>"1"}, "commit"=>"Create Song"}
+Completed   in 12ms
+
+NoMethodError (undefined method `album' for #<Song:0x000001009d5ea8>):
+  app/controllers/songs_controller.rb:46:in `block in create'
+  app/controllers/songs_controller.rb:45:in `create'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2011-02-17 17:37:28 -0700
+  Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "song"=>{"name"=>"s1", "runtime"=>"42", "album_id"=>"1"}, "commit"=>"Create Song"}
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "songs" ("name", "runtime", "album_id", "created_at", "updated_at") VALUES ('s1', 42, 1, '2011-02-18 00:37:28.341995', '2011-02-18 00:37:28.341995')[0m
+Redirected to http://localhost:3000/songs/1
+Completed 302 Found in 23ms
+
+
+Started GET "/songs/1" for 127.0.0.1 at 2011-02-17 17:37:28 -0700
+  Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSQL (0.6ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."id" = 1 LIMIT 1[0m
+Rendered songs/show.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 49ms (Views: 38.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 17:37:33 -0700
+  Processing by SongsController#index as HTML
+  [1m[35mSong Load (0.6ms)[0m  SELECT "songs".* FROM "songs"
+Rendered songs/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 23ms (Views: 13.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 17:37:37 -0700
+  Processing by SongsController#new as HTML
+Rendered songs/_form.html.erb (8.4ms)
+Rendered songs/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 64ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2011-02-17 17:37:39 -0700
+  Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "song"=>{"name"=>"", "runtime"=>"", "album_id"=>""}, "commit"=>"Create Song"}
+Rendered songs/_form.html.erb (6.4ms)
+Rendered songs/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 29ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2011-02-17 17:37:54 -0700
+  Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "song"=>{"name"=>"s2", "runtime"=>"3248", "album_id"=>"1"}, "commit"=>"Create Song"}
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "songs" ("name", "runtime", "album_id", "created_at", "updated_at") VALUES ('s2', 3248, 1, '2011-02-18 00:37:54.505408', '2011-02-18 00:37:54.505408')
+Redirected to http://localhost:3000/songs/2
+Completed 302 Found in 21ms
+
+
+Started GET "/songs/2" for 127.0.0.1 at 2011-02-17 17:37:54 -0700
+  Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."id" = 2 LIMIT 1
+Rendered songs/show.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 26ms (Views: 13.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 17:37:56 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.4ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+Rendered songs/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 25ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/2/edit" for 127.0.0.1 at 2011-02-17 17:38:15 -0700
+  Processing by SongsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."id" = 2 LIMIT 1[0m
+Rendered songs/_form.html.erb (40.5ms)
+Rendered songs/edit.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 55ms (Views: 47.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 17:38:24 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.5ms)[0m  SELECT "albums".* FROM "albums"
+Rendered albums/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 25ms (Views: 16.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 17:38:40 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.5ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+Rendered songs/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 58ms (Views: 50.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/songs/2" for 127.0.0.1 at 2011-02-17 17:38:42 -0700
+  Processing by SongsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "id"=>"2"}
+  [1m[35mSQL (0.6ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."id" = 2 LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "songs" WHERE "songs"."id" = 2
+Redirected to http://localhost:3000/songs
+Completed 302 Found in 20ms
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 17:38:42 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.4ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+Rendered songs/index.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 49ms (Views: 40.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/songs/1" for 127.0.0.1 at 2011-02-17 17:38:44 -0700
+  Processing by SongsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "id"=>"1"}
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "songs" WHERE "songs"."id" = 1
+Redirected to http://localhost:3000/songs
+Completed 302 Found in 18ms
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 17:38:44 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.5ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+Rendered songs/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 15ms (Views: 7.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 17:41:29 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.6ms)[0m  SELECT "albums".* FROM "albums"
+Rendered albums/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 47ms (Views: 13.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 17:44:37 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.4ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+Rendered songs/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 17ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 17:44:39 -0700
+  Processing by SongsController#new as HTML
+Rendered songs/_form.html.erb (7.3ms)
+Rendered songs/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 26ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2011-02-17 17:44:44 -0700
+  Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "song"=>{"name"=>"s1", "runtime"=>"", "album_id"=>"1"}, "commit"=>"Create Song"}
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "songs" ("name", "runtime", "album_id", "created_at", "updated_at") VALUES ('s1', NULL, 1, '2011-02-18 00:44:44.544711', '2011-02-18 00:44:44.544711')
+Redirected to http://localhost:3000/songs/3
+Completed 302 Found in 41ms
+
+
+Started GET "/songs/3" for 127.0.0.1 at 2011-02-17 17:44:44 -0700
+  Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSong Load (0.3ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."id" = 3 LIMIT 1
+Rendered songs/show.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 57ms (Views: 12.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 17:45:04 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.7ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+Rendered songs/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 23ms (Views: 13.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/songs/3" for 127.0.0.1 at 2011-02-17 17:45:07 -0700
+  Processing by SongsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "id"=>"3"}
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."id" = 3 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  DELETE FROM "songs" WHERE "songs"."id" = 3
+Redirected to http://localhost:3000/songs
+Completed 302 Found in 19ms
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 17:45:07 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.4ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+Rendered songs/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 11ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 17:45:47 -0700
+  Processing by SongsController#new as HTML
+Rendered songs/_form.html.erb (5.7ms)
+Rendered songs/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 19ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 17:49:49 -0700
+  Processing by SongsController#new as HTML
+Rendered songs/_form.html.erb (56.7ms)
+Rendered songs/new.html.erb within layouts/application (58.0ms)
+Completed   in 70ms
+
+ActionView::Template::Error (undefined method `Album' for #<#<Class:0x000001019eb018>:0x000001019dddf0>):
+    26: 
+    27: 
+    28: 	<div>
+    29: 		<% albums = Album {|i| [ h(i.name), i.id ] } %>
+    30: 		<%= f.label :album_id %>
+    31: 		<%= f.select(:album_id, albums, { :include_blank => false, :selected => row.album_id }, :id => "song_#{row.id}") %>
+    32: 	</div>
+  app/views/songs/_form.html.erb:29:in `block in _app_views_songs__form_html_erb__2003081566772316082_2160952260_4500424568392314347'
+  app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__2003081566772316082_2160952260_4500424568392314347'
+  app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___4425002431914473398_2161016720__1853061843738332245'
+  app/controllers/songs_controller.rb:29:in `new'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 17:50:07 -0700
+  Processing by SongsController#new as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+Rendered songs/_form.html.erb (32.7ms)
+Rendered songs/new.html.erb within layouts/application (34.0ms)
+Completed   in 45ms
+
+ActionView::Template::Error (undefined local variable or method `row' for #<#<Class:0x00000101de7c98>:0x00000101de53f8>):
+    28: 	<div>
+    29: 		<% albums = Album.all.collect {|i| [ h(i.name), i.id ] } %>
+    30: 		<%= f.label :album_id %>
+    31: 		<%= f.select(:album_id, albums, { :include_blank => false, :selected => row.album_id }, :id => "song_#{row.id}") %>
+    32: 	</div>
+    33: 	
+    34: 
+  app/views/songs/_form.html.erb:31:in `block in _app_views_songs__form_html_erb__2003081566772316082_2163143580_4500424568392314347'
+  app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__2003081566772316082_2163143580_4500424568392314347'
+  app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___4425002431914473398_2163154640__1853061843738332245'
+  app/controllers/songs_controller.rb:29:in `new'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (30.0ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (36.6ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 17:50:19 -0700
+  Processing by SongsController#new as HTML
+  [1m[36mAlbum Load (0.3ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered songs/_form.html.erb (34.6ms)
+Rendered songs/new.html.erb within layouts/application (36.4ms)
+Completed   in 52ms
+
+ActionView::Template::Error (undefined local variable or method `row' for #<#<Class:0x00000102304e38>:0x000001022f8750>):
+    28: 	<div>
+    29: 		<% albums = Album.all.collect {|i| [ h(i.name), i.id ] } %>
+    30: 		<%= f.label :album_id %>
+    31: 		<%= f.select(:album_id, albums, { :include_blank => false, :selected => row.album_id }, :id => "song_#{song.id}") %>
+    32: 	</div>
+    33: 	
+    34: 
+  app/views/songs/_form.html.erb:31:in `block in _app_views_songs__form_html_erb__2003081566772316082_2165707840_4500424568392314347'
+  app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__2003081566772316082_2165707840_4500424568392314347'
+  app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___4425002431914473398_2165793960__1853061843738332245'
+  app/controllers/songs_controller.rb:29:in `new'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (34.4ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 17:50:27 -0700
+  Processing by SongsController#new as HTML
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT "albums".* FROM "albums"
+Rendered songs/_form.html.erb (31.3ms)
+Rendered songs/new.html.erb within layouts/application (32.7ms)
+Completed   in 45ms
+
+ActionView::Template::Error (undefined local variable or method `song' for #<#<Class:0x0000010295f6e8>:0x0000010295cab0>):
+    28: 	<div>
+    29: 		<% albums = Album.all.collect {|i| [ h(i.name), i.id ] } %>
+    30: 		<%= f.label :album_id %>
+    31: 		<%= f.select(:album_id, albums, { :include_blank => false, :selected => song.album_id }, :id => "song_#{song.id}") %>
+    32: 	</div>
+    33: 	
+    34: 
+  app/views/songs/_form.html.erb:31:in `block in _app_views_songs__form_html_erb__2003081566772316082_2169117020_4500424568392314347'
+  app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__2003081566772316082_2169117020_4500424568392314347'
+  app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___4425002431914473398_2169161940__1853061843738332245'
+  app/controllers/songs_controller.rb:29:in `new'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.8ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 17:50:41 -0700
+  Processing by SongsController#new as HTML
+  [1m[36mAlbum Load (0.3ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered songs/_form.html.erb (30.8ms)
+Rendered songs/new.html.erb within layouts/application (32.0ms)
+Completed   in 44ms
+
+ActionView::Template::Error (undefined local variable or method `song' for #<#<Class:0x00000102a03888>:0x00000102a01808>):
+    28: 	<div>
+    29: 		<% albums = Album.all.collect {|i| [ h(i.name), i.id ] } %>
+    30: 		<%= f.label :album_id %>
+    31: 		<%= f.select(:album_id, albums, { :include_blank => false, :selected => song.album.id }, :id => "song_#{song.id}") %>
+    32: 	</div>
+    33: 	
+    34: 
+  app/views/songs/_form.html.erb:31:in `block in _app_views_songs__form_html_erb__2003081566772316082_2169492060_4500424568392314347'
+  app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__2003081566772316082_2169492060_4500424568392314347'
+  app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___4425002431914473398_2169503980__1853061843738332245'
+  app/controllers/songs_controller.rb:29:in `new'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.7ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 17:51:16 -0700
+  Processing by SongsController#index as HTML
+  [1m[35mSong Load (0.4ms)[0m  SELECT "songs".* FROM "songs"
+Rendered songs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 17:51:19 -0700
+  Processing by SongsController#new as HTML
+  [1m[36mAlbum Load (0.3ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered songs/_form.html.erb (68.3ms)
+Rendered songs/new.html.erb within layouts/application (69.5ms)
+Completed   in 84ms
+
+ActionView::Template::Error (undefined local variable or method `song' for #<#<Class:0x00000101c5f538>:0x00000101c5b078>):
+    28: 	<div>
+    29: 		<% albums = Album.all.collect {|i| [ h(i.name), i.id ] } %>
+    30: 		<%= f.label :album_id %>
+    31: 		<%= f.select(:album_id, albums, { :include_blank => false, :selected => song.album_id }, :id => "song_#{song.id}") %>
+    32: 	</div>
+    33: 	
+    34: 
+  app/views/songs/_form.html.erb:31:in `block in _app_views_songs__form_html_erb__2003081566772316082_2162313440_4500424568392314347'
+  app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__2003081566772316082_2162313440_4500424568392314347'
+  app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___4425002431914473398_2162342200__1853061843738332245'
+  app/controllers/songs_controller.rb:29:in `new'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 17:51:32 -0700
+  Processing by SongsController#new as HTML
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT "albums".* FROM "albums"
+Rendered songs/_form.html.erb (36.5ms)
+Rendered songs/new.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 54ms (Views: 42.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 17:53:17 -0700
+  Processing by SongsController#new as HTML
+  [1m[36mAlbum Load (0.4ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered songs/_form.html.erb (46.5ms)
+Rendered songs/new.html.erb within layouts/application (51.4ms)
+Completed 200 OK in 74ms (Views: 56.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 17:54:18 -0700
+  Processing by SongsController#index as HTML
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+Rendered songs/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 17ms (Views: 7.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 17:54:19 -0700
+  Processing by SongsController#new as HTML
+  [1m[36mAlbum Load (0.3ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered songs/_form.html.erb (58.9ms)
+Rendered songs/new.html.erb within layouts/application (62.1ms)
+Completed 200 OK in 76ms (Views: 65.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 17:56:04 -0700
+  Processing by SongsController#new as HTML
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT "albums".* FROM "albums"
+Rendered songs/_form.html.erb (29.6ms)
+Rendered songs/new.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 46ms (Views: 35.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2011-02-17 17:56:08 -0700
+  Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "song"=>{"name"=>"s1", "runtime"=>"1234", "album_id"=>"1"}, "commit"=>"Create Song"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "songs" ("name", "runtime", "album_id", "created_at", "updated_at") VALUES ('s1', 1234, 1, '2011-02-18 00:56:08.064809', '2011-02-18 00:56:08.064809')[0m
+Redirected to http://localhost:3000/songs/4
+Completed 302 Found in 79ms
+
+
+Started GET "/songs/4" for 127.0.0.1 at 2011-02-17 17:56:08 -0700
+  Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."id" = 4 LIMIT 1[0m
+Rendered songs/show.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 22ms (Views: 13.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 17:56:14 -0700
+  Processing by SongsController#index as HTML
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+Rendered songs/index.html.erb within layouts/application (40.8ms)
+Completed 200 OK in 53ms (Views: 44.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 17:56:32 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.4ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+Rendered songs/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 19ms (Views: 12.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 17:57:04 -0700
+  Processing by SongsController#index as HTML
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mAlbum Load (0.2ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1[0m
+Rendered songs/index.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 75ms (Views: 33.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 17:57:18 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.5ms)[0m  SELECT "albums".* FROM "albums"
+Rendered albums/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 60ms (Views: 15.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 17:58:31 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.4ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered albums/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 21ms (Views: 13.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 18:00:49 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.5ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mSong Load (0.3ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 1)[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" WHERE ("songs".album_id = 2)
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)[0m
+Rendered albums/index.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 43ms (Views: 35.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 18:01:34 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 1)[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" WHERE ("songs".album_id = 2)
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)[0m
+Rendered albums/index.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 41ms (Views: 32.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 18:01:39 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 1)[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" WHERE ("songs".album_id = 2)
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)[0m
+Rendered albums/index.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 41ms (Views: 32.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 18:01:45 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 1)[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" WHERE ("songs".album_id = 2)
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)[0m
+Rendered albums/index.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 76ms (Views: 67.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 18:01:50 -0700
+  Processing by SongsController#index as HTML
+  [1m[35mSong Load (0.4ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mAlbum Load (0.2ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1[0m
+Rendered songs/index.html.erb within layouts/application (55.1ms)
+Completed 200 OK in 68ms (Views: 59.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 18:01:52 -0700
+  Processing by SongsController#new as HTML
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT "albums".* FROM "albums"
+Rendered songs/_form.html.erb (59.5ms)
+Rendered songs/new.html.erb within layouts/application (62.2ms)
+Completed 200 OK in 77ms (Views: 65.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2011-02-17 18:02:02 -0700
+  Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "song"=>{"name"=>"s2", "runtime"=>"2938", "album_id"=>"1"}, "commit"=>"Create Song"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "songs" ("name", "runtime", "album_id", "created_at", "updated_at") VALUES ('s2', 2938, 1, '2011-02-18 01:02:02.737195', '2011-02-18 01:02:02.737195')[0m
+Redirected to http://localhost:3000/songs/5
+Completed 302 Found in 74ms
+
+
+Started GET "/songs/5" for 127.0.0.1 at 2011-02-17 18:02:02 -0700
+  Processing by SongsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mSQL (0.5ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."id" = 5 LIMIT 1[0m
+Rendered songs/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 21ms (Views: 10.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2011-02-17 18:02:07 -0700
+  Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "song"=>{"name"=>"s3", "runtime"=>"23", "album_id"=>"1"}, "commit"=>"Create Song"}
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "songs" ("name", "runtime", "album_id", "created_at", "updated_at") VALUES ('s3', 23, 1, '2011-02-18 01:02:07.931676', '2011-02-18 01:02:07.931676')
+Redirected to http://localhost:3000/songs/6
+Completed 302 Found in 38ms
+
+
+Started GET "/songs/6" for 127.0.0.1 at 2011-02-17 18:02:07 -0700
+  Processing by SongsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."id" = 6 LIMIT 1
+Rendered songs/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 21ms (Views: 10.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 18:02:11 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.6ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+  [1m[35mSong Load (0.4ms)[0m  SELECT "songs".* FROM "songs" WHERE ("songs".album_id = 1)
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 2)[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)
+Rendered albums/index.html.erb within layouts/application (59.6ms)
+Completed 200 OK in 72ms (Views: 63.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 18:02:28 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.5ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1
+Rendered songs/index.html.erb within layouts/application (60.8ms)
+Completed 200 OK in 72ms (Views: 64.4ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/songs/5" for 127.0.0.1 at 2011-02-17 18:02:36 -0700
+  Processing by SongsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "id"=>"5"}
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSong Load (0.3ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."id" = 5 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM "songs" WHERE "songs"."id" = 5[0m
+Redirected to http://localhost:3000/songs
+Completed 302 Found in 25ms
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 18:02:36 -0700
+  Processing by SongsController#index as HTML
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mAlbum Load (0.2ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1
+Rendered songs/index.html.erb within layouts/application (66.3ms)
+Completed 200 OK in 79ms (Views: 70.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 18:02:37 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.4ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+  [1m[35mSong Load (0.3ms)[0m  SELECT "songs".* FROM "songs" WHERE ("songs".album_id = 1)
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 2)[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)
+Rendered albums/index.html.erb within layouts/application (57.5ms)
+Completed 200 OK in 69ms (Views: 60.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/songs/6/edit" for 127.0.0.1 at 2011-02-17 18:02:43 -0700
+  Processing by SongsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."id" = 6 LIMIT 1
+  [1m[36mAlbum Load (0.3ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+Rendered songs/_form.html.erb (67.9ms)
+Rendered songs/edit.html.erb within layouts/application (72.2ms)
+Completed 200 OK in 89ms (Views: 75.4ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/songs/6" for 127.0.0.1 at 2011-02-17 18:02:47 -0700
+  Processing by SongsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "song"=>{"name"=>"Test Song", "runtime"=>"23", "album_id"=>"1"}, "commit"=>"Update Song", "id"=>"6"}
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."id" = 6 LIMIT 1[0m
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "songs" SET "name" = 'Test Song', "updated_at" = '2011-02-18 01:02:47.841934' WHERE "songs"."id" = 6[0m
+Redirected to http://localhost:3000/songs/6
+Completed 302 Found in 75ms
+
+
+Started GET "/songs/6" for 127.0.0.1 at 2011-02-17 18:02:47 -0700
+  Processing by SongsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."id" = 6 LIMIT 1[0m
+Rendered songs/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 21ms (Views: 12.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 18:02:49 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.6ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mSong Load (0.3ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 1)[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" WHERE ("songs".album_id = 2)
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)[0m
+Rendered albums/index.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 45ms (Views: 34.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 18:03:23 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.6ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mSong Load (0.3ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 1)[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" WHERE ("songs".album_id = 2)
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)[0m
+Rendered albums/index.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 43ms (Views: 32.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/albums/1" for 127.0.0.1 at 2011-02-17 18:03:33 -0700
+  Processing by AlbumsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "id"=>"1"}
+  [1m[35mAlbum Load (0.1ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mDELETE FROM "albums" WHERE "albums"."id" = 1[0m
+Redirected to http://localhost:3000/albums
+Completed 302 Found in 52ms
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 18:03:33 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.7ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 2)[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)
+Rendered albums/index.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 39ms (Views: 29.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/songs/" for 127.0.0.1 at 2011-02-17 18:03:39 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.4ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1
+Rendered songs/index.html.erb within layouts/application (24.5ms)
+Completed   in 34ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    14:   <tr>
+    15:     <td><%= song.name %></td>
+    16:     <td><%= song.runtime %></td>
+    17:     <td><%= song.album.name %></td>
+    18:     <td><%= link_to 'Show', song %></td>
+    19:     <td><%= link_to 'Edit', edit_song_path(song) %></td>
+    20:     <td><%= link_to 'Destroy', song, :confirm => 'Are you sure?', :method => :delete %></td>
+  app/views/songs/index.html.erb:17:in `block in _app_views_songs_index_html_erb___2428038925151991979_2169510960__1853061843738332245'
+  app/views/songs/index.html.erb:13:in `each'
+  app/views/songs/index.html.erb:13:in `_app_views_songs_index_html_erb___2428038925151991979_2169510960__1853061843738332245'
+  app/controllers/songs_controller.rb:7:in `index'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.8ms)
+
+
+Started GET "/songs/" for 127.0.0.1 at 2011-02-17 18:04:19 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.4ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1
+Rendered songs/index.html.erb within layouts/application (50.0ms)
+Completed   in 60ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    14:   <tr>
+    15:     <td><%= song.name %></td>
+    16:     <td><%= song.runtime %></td>
+    17:     <td><%= song.album.name %></td>
+    18:     <td><%= link_to 'Show', song %></td>
+    19:     <td><%= link_to 'Edit', edit_song_path(song) %></td>
+    20:     <td><%= link_to 'Destroy', song, :confirm => 'Are you sure?', :method => :delete %></td>
+  app/views/songs/index.html.erb:17:in `block in _app_views_songs_index_html_erb___2428038925151991979_2152241860__1853061843738332245'
+  app/views/songs/index.html.erb:13:in `each'
+  app/views/songs/index.html.erb:13:in `_app_views_songs_index_html_erb___2428038925151991979_2152241860__1853061843738332245'
+  app/controllers/songs_controller.rb:7:in `index'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/songs/" for 127.0.0.1 at 2011-02-17 18:04:20 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.4ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1
+Rendered songs/index.html.erb within layouts/application (49.6ms)
+Completed   in 59ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    14:   <tr>
+    15:     <td><%= song.name %></td>
+    16:     <td><%= song.runtime %></td>
+    17:     <td><%= song.album.name %></td>
+    18:     <td><%= link_to 'Show', song %></td>
+    19:     <td><%= link_to 'Edit', edit_song_path(song) %></td>
+    20:     <td><%= link_to 'Destroy', song, :confirm => 'Are you sure?', :method => :delete %></td>
+  app/views/songs/index.html.erb:17:in `block in _app_views_songs_index_html_erb___2428038925151991979_2160923900__1853061843738332245'
+  app/views/songs/index.html.erb:13:in `each'
+  app/views/songs/index.html.erb:13:in `_app_views_songs_index_html_erb___2428038925151991979_2160923900__1853061843738332245'
+  app/controllers/songs_controller.rb:7:in `index'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/songs/" for 127.0.0.1 at 2011-02-17 18:04:21 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.4ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1
+Rendered songs/index.html.erb within layouts/application (18.9ms)
+Completed   in 29ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    14:   <tr>
+    15:     <td><%= song.name %></td>
+    16:     <td><%= song.runtime %></td>
+    17:     <td><%= song.album.name %></td>
+    18:     <td><%= link_to 'Show', song %></td>
+    19:     <td><%= link_to 'Edit', edit_song_path(song) %></td>
+    20:     <td><%= link_to 'Destroy', song, :confirm => 'Are you sure?', :method => :delete %></td>
+  app/views/songs/index.html.erb:17:in `block in _app_views_songs_index_html_erb___2428038925151991979_2163143380__1853061843738332245'
+  app/views/songs/index.html.erb:13:in `each'
+  app/views/songs/index.html.erb:13:in `_app_views_songs_index_html_erb___2428038925151991979_2163143380__1853061843738332245'
+  app/controllers/songs_controller.rb:7:in `index'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/songs/" for 127.0.0.1 at 2011-02-17 18:04:24 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.5ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1
+Rendered songs/index.html.erb within layouts/application (23.8ms)
+Completed   in 35ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    14:   <tr>
+    15:     <td><%= song.name %></td>
+    16:     <td><%= song.runtime %></td>
+    17:     <td><%= song.album.name %></td>
+    18:     <td><%= link_to 'Show', song %></td>
+    19:     <td><%= link_to 'Edit', edit_song_path(song) %></td>
+    20:     <td><%= link_to 'Destroy', song, :confirm => 'Are you sure?', :method => :delete %></td>
+  app/views/songs/index.html.erb:17:in `block in _app_views_songs_index_html_erb___2428038925151991979_2169525940__1853061843738332245'
+  app/views/songs/index.html.erb:13:in `each'
+  app/views/songs/index.html.erb:13:in `_app_views_songs_index_html_erb___2428038925151991979_2169525940__1853061843738332245'
+  app/controllers/songs_controller.rb:7:in `index'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/songs/" for 127.0.0.1 at 2011-02-17 18:05:19 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.5ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1
+Rendered songs/index.html.erb within layouts/application (52.9ms)
+Completed   in 63ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    14:   <tr>
+    15:     <td><%= song.name %></td>
+    16:     <td><%= song.runtime %></td>
+    17:     <td><%= song.album.name %></td>
+    18:     <td><%= link_to 'Show', song %></td>
+    19:     <td><%= link_to 'Edit', edit_song_path(song) %></td>
+    20:     <td><%= link_to 'Destroy', song, :confirm => 'Are you sure?', :method => :delete %></td>
+  app/views/songs/index.html.erb:17:in `block in _app_views_songs_index_html_erb___2428038925151991979_2152418900__1853061843738332245'
+  app/views/songs/index.html.erb:13:in `each'
+  app/views/songs/index.html.erb:13:in `_app_views_songs_index_html_erb___2428038925151991979_2152418900__1853061843738332245'
+  app/controllers/songs_controller.rb:7:in `index'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/songs/" for 127.0.0.1 at 2011-02-17 18:05:20 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.6ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1
+Rendered songs/index.html.erb within layouts/application (48.9ms)
+Completed   in 60ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    14:   <tr>
+    15:     <td><%= song.name %></td>
+    16:     <td><%= song.runtime %></td>
+    17:     <td><%= song.album.name %></td>
+    18:     <td><%= link_to 'Show', song %></td>
+    19:     <td><%= link_to 'Edit', edit_song_path(song) %></td>
+    20:     <td><%= link_to 'Destroy', song, :confirm => 'Are you sure?', :method => :delete %></td>
+  app/views/songs/index.html.erb:17:in `block in _app_views_songs_index_html_erb___2428038925151991979_2160974000__1853061843738332245'
+  app/views/songs/index.html.erb:13:in `each'
+  app/views/songs/index.html.erb:13:in `_app_views_songs_index_html_erb___2428038925151991979_2160974000__1853061843738332245'
+  app/controllers/songs_controller.rb:7:in `index'
+
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /Users/preston/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+  [1m[36mSong Load (0.7ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mSong Load (0.3ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mSong Load (0.3ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mSong Load (0.3ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mSong Load (0.3ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAlbum Load (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1[0m
+  [1m[35mSong Load (0.3ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mAlbum Load (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.5ms)[0m  DELETE FROM "songs" WHERE "songs"."id" = 4
+  [1m[36mAlbum Load (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  DELETE FROM "songs" WHERE "songs"."id" = 6
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs"
+
+
+Started GET "/songs/" for 127.0.0.1 at 2011-02-17 18:08:38 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.4ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+Rendered songs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 12ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2011-02-17 18:08:41 -0700
+  Processing by SongsController#new as HTML
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums"
+Rendered songs/_form.html.erb (56.4ms)
+Rendered songs/new.html.erb within layouts/application (60.5ms)
+Completed 200 OK in 73ms (Views: 63.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2011-02-17 18:08:48 -0700
+  Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "song"=>{"name"=>"s1", "runtime"=>"2938", "album_id"=>"2"}, "commit"=>"Create Song"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "songs" ("name", "runtime", "album_id", "created_at", "updated_at") VALUES ('s1', 2938, 2, '2011-02-18 01:08:48.709468', '2011-02-18 01:08:48.709468')[0m
+Redirected to http://localhost:3000/songs/7
+Completed 302 Found in 74ms
+
+
+Started GET "/songs/7" for 127.0.0.1 at 2011-02-17 18:08:48 -0700
+  Processing by SongsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."id" = 7 LIMIT 1[0m
+Rendered songs/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 23ms (Views: 13.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2011-02-17 18:08:51 -0700
+  Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "song"=>{"name"=>"s2", "runtime"=>"3984", "album_id"=>"2"}, "commit"=>"Create Song"}
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "songs" ("name", "runtime", "album_id", "created_at", "updated_at") VALUES ('s2', 3984, 2, '2011-02-18 01:08:52.036772', '2011-02-18 01:08:52.036772')
+Redirected to http://localhost:3000/songs/8
+Completed 302 Found in 39ms
+
+
+Started GET "/songs/8" for 127.0.0.1 at 2011-02-17 18:08:52 -0700
+  Processing by SongsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."id" = 8 LIMIT 1
+Rendered songs/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 21ms (Views: 10.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 18:08:54 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.6ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+  [1m[35mSong Load (0.3ms)[0m  SELECT "songs".* FROM "songs" WHERE ("songs".album_id = 2)
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)[0m
+Rendered albums/index.html.erb within layouts/application (60.2ms)
+Completed 200 OK in 75ms (Views: 63.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/albums/2" for 127.0.0.1 at 2011-02-17 18:09:03 -0700
+  Processing by AlbumsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"96GZG12Q1IIKwd8cEGxrzCbYHcREjw8KFXAtRcPn0hU=", "id"=>"2"}
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1
+  [1m[36mSong Load (0.3ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 2)[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mDELETE FROM "songs" WHERE "songs"."id" = 7[0m
+  [1m[35mAREL (0.1ms)[0m  DELETE FROM "songs" WHERE "songs"."id" = 8
+  [1m[36mAREL (0.1ms)[0m  [1mDELETE FROM "albums" WHERE "albums"."id" = 2[0m
+Redirected to http://localhost:3000/albums
+Completed 302 Found in 73ms
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 18:09:03 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.6ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)[0m
+Rendered albums/index.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 39ms (Views: 27.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 18:09:05 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)[0m
+Rendered albums/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 33ms (Views: 24.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 18:09:09 -0700
+  Processing by SongsController#index as HTML
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+Rendered songs/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 15ms (Views: 6.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2011-02-17 18:10:07 -0700
+  Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.6ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+Rendered songs/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 65ms (Views: 5.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 18:11:22 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)[0m
+Rendered albums/index.html.erb within layouts/application (56.9ms)
+Completed 200 OK in 84ms (Views: 59.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 18:11:32 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)[0m
+Rendered albums/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 62ms (Views: 23.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/albums/new" for 127.0.0.1 at 2011-02-17 18:11:38 -0700
+  Processing by AlbumsController#new as HTML
+Rendered albums/_form.html.erb (7.5ms)
+Rendered albums/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 24ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 18:14:00 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)[0m
+Rendered albums/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 31ms (Views: 23.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/albums/6" for 127.0.0.1 at 2011-02-17 18:14:02 -0700
+  Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mSQL (0.5ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAlbum Load (0.2ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 6 LIMIT 1[0m
+Rendered albums/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 22ms (Views: 10.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 18:14:16 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)[0m
+Rendered albums/index.html.erb within layouts/application (45.6ms)
+Completed 200 OK in 59ms (Views: 48.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/albums/6" for 127.0.0.1 at 2011-02-17 18:14:18 -0700
+  Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 6 LIMIT 1
+Rendered albums/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 25ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/albums/6" for 127.0.0.1 at 2011-02-17 18:15:33 -0700
+  Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAlbum Load (0.1ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 6 LIMIT 1
+Rendered albums/show.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 109ms (Views: 15.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/albums/6" for 127.0.0.1 at 2011-02-17 18:15:36 -0700
+  Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 6 LIMIT 1[0m
+Rendered albums/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 25ms (Views: 12.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2011-02-17 18:15:37 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.5ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id = 6)[0m
+Rendered albums/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 48ms (Views: 38.5ms | ActiveRecord: 0.7ms)
