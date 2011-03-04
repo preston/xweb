@@ -1,11 +1,8 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
-  runtime: 1
-  album_id: 1
-
-two:
-  name: MyString
-  runtime: 1
-  album_id: 1
+<% (1..15).each do |n| %>
+a1_s<%= n %>:
+  name: Song <%= n %>
+  runtime: 100
+  album: album_1 
+<% end %>

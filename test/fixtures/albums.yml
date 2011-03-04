@@ -1,11 +1,9 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+album_1:
+  name: Album 1
+  description: The first album in the database.
+  year: 2011
 
-one:
-  name: MyString
-  description: MyString
-  year: 1
-
-two:
-  name: MyString
-  description: MyString
-  year: 1
+album_2:
+  name: Album 2
+  description: The second album in the database.
+  year: 2011
