@@ -1,0 +1,10 @@
+Thu, 24 Feb 2011 16:28:20 -0700
+doc/README_FOR_APP	Thu, 17 Feb 2011 16:33:51 -0700
+app/controllers/albums_controller.rb	Thu, 17 Feb 2011 16:44:07 -0700
+app/controllers/application_controller.rb	Thu, 17 Feb 2011 16:33:51 -0700
+app/controllers/songs_controller.rb	Thu, 17 Feb 2011 17:32:59 -0700
+app/helpers/albums_helper.rb	Thu, 17 Feb 2011 16:44:07 -0700
+app/helpers/application_helper.rb	Thu, 17 Feb 2011 16:33:51 -0700
+app/helpers/songs_helper.rb	Thu, 17 Feb 2011 17:32:59 -0700
+app/models/album.rb	Thu, 24 Feb 2011 16:27:57 -0700
+app/models/song.rb	Thu, 24 Feb 2011 16:25:19 -0700
