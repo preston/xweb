@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/MacPorts 2010_1) (format=pdflatex 2011.1.28)  3 FEB 2011 15:33
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/MacPorts 2010_2) (format=pdflatex 2011.2.7)  31 MAR 2011 14:05
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -101,7 +101,7 @@ Overfull \hbox (0.80423pt too wide) in paragraph at lines 85--86
 (./X Web Presentation Checklist.aux) ) 
 Here is how much of TeX's memory you used:
  399 strings out of 493747
- 4793 string characters out of 3143115
+ 4793 string characters out of 3143116
  52640 words of memory out of 3000000
  3752 multiletter control sequences out of 15000+200000
  8594 words of font info for 30 fonts, out of 3000000 for 9000
@@ -116,7 +116,7 @@ type1/public/amsfonts/cm/cmr17.pfb></opt/local/share/texmf-texlive-dist/fonts/t
 ype1/public/amsfonts/cm/cmsl10.pfb></opt/local/share/texmf-texlive-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texlive-dist/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb>
-Output written on "X Web Presentation Checklist.pdf" (6 pages, 109163 bytes).
+Output written on "X Web Presentation Checklist.pdf" (6 pages, 109178 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
