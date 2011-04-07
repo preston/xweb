@@ -2,7 +2,8 @@ class AlbumsController < ApplicationController
   # GET /albums
   # GET /albums.xml
   def index
-    @albums = Album.all
+    # @albums = Album.all()
+    @albums = Album.all(:include => [:songs])
 
     respond_to do |format|
       format.html # index.html.erb
