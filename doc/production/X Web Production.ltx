@@ -1,0 +1,87 @@
+\documentclass[10pt,twocolumn]{article}
+%\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+%\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+%\usepackage{graphicx}
+%\usepackage{amssymb}
+%\usepackage{epstopdf}
+%\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyfoot[L]{X Web \\ CST 533}
+\fancyfoot[C]{Production \\ {\copyright} Preston Lee 2011. All rights reserved.}
+\fancyfoot[RO, LE] {{\thepage} of \pageref{LastPage}}
+
+\title{X Web: Production}
+
+\author{Preston Lee}
+\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+\section{Abstract}
+
+Your product team has successfully developed what will soon become the first ``production" deployment of your database-backed web application. Management has become concerned regarding the over-isolation of individual product teams, however, and as a risk mitigation measure has decided to spread the ``tribal knowledge" associated with your product to other teams, and vice versa.
+
+The bulk of the work on this final project will be split into two primary areas:
+
+\begin{description}
+\item[Deployment] You will create a ``production" instance of your application and associated MySQL database. In addition, you will work with your external QA team to address any issues they find.
+\item[QA] You will play the role of QA engineers for a {\it different} team, and provide them with automated user acceptance and load testing scripts.
+\end{description}
+
+You will also need to develop a users guide covering the custom grading criteria you have already defined, and present this work to the class in a ``live" manner.
+
+
+\section{Grading breakdown.}
+
+All members of your team will receive the same grade for the project, regardless of the fairness of work distribution. Additionally, the team captain will deliver a live demo in front of the class prior to grading.
+
+Total points possible: 36.
+
+\begin{description}
+\item[20\%] Final presentation.
+\item[20\%] Automated deployment in collaboration with external QA team.
+\item[30\%] Users' Guide.
+\item[30\%] QA activities for external product team.
+\end{description}
+
+
+\subsection{Final presentation.}
+
+Your final presentation should contain two parts. First, the entire class--lead by your captain as well as the instructor--will download your Users' Guide and follow the instructions therein. You will have projector access to show slides, code, and other additional resources you deem fit. If you have hard limits on concurrent users, you must specify the constraints in your users guide. 
+
+Secondly, you must perform a live demo of the automated user acceptance, profiling, and load testing cases developed by your QA team. Your application will need to respond to the performance specifications you claim in your Users' Guide, though you may do so in a ``local", controlled environment.
+
+Quality of content, delivery and project demo will be considered. In other words, make sure your project doesn't ``blow up" in front of the class! The entire process should take approximately 15 minutes.
+
+
+\subsection{Automated deployment.}
+
+Your team will fully automated the software release process into a two-step process: first making sure the tests pass (must be thorough and cover all custom features, both graded and ungraded), and secondly deploying of new builds as well as running database migration tasks required of the new software. ({\bf Recommended: Heroku's free service tier.} If you have your own server and wish to explore this area in more detail, also check out {\it capistrano} and {\it Phusion Passenger}.)
+
+\subsection{Users' Guide.}
+
+Develop a Users' Guide for your software, walking your users through the core use cases, overlapping with previously-defined custom grading criteria. Please use annotated screenshots where appropriate. You may develop the guide in whatever format you like, provided you also deliver a .PDF rendering with your final deliverable.
+
+
+\subsection{QA activities for external product team.}
+
+You will play the role of a QA engineer, and develop the following tests for the external product team to which you have already been assigned:
+
+\begin{description}
+\item[User Acceptance Tests] Use the Selenium framework to automate high-level user testing of all custom grading criteria defined by the external product team, as well as any/all additional use cases covered in their Users' Guide. (Exceptions will only be made for unrealistically implausible test circumstances.) {\bf Important: It is your job to assure your tests are correct and complete, but {\it not} that they pass! (That is the job of the external developers.)} If the developers have not yet developed a required feature, you may have situations where a test is ``completed" before the actual feature. This is not only ok, but expected in some circumstances! These tests should not only ``click through" links, but validate that the pages shown are as expected.
+\item[Load Testing] Using JMeter, create synthetic ``users" that put the system under load on your local system. Using the graphs and charts generated from this empiracal data, provide the product team with {\it real} numbers, as well as the test script(s). If certain components are being problematic from a performance standpoint, let the product developers know! While the use cases should be real, your JMeter file(s) do {\it not} need to validate system output to the extent that the Selenium tests do.
+\item[Bottleneck Profiling] For the most resource intensive system operation, provide the external developers with a breakdown of where the bottleneck(s) is/are. It is {\it not} your duty to fix the issue(s): that work may or may not be addressed by the developers, at their discretion.
+\end{description}
+
+\section{Project submission.}
+
+Use GitHub for all source code, documentation and test cases. Before your final presentation, place a copy of your Users' Guide and any additional presentation materials in the course Dropbox. 
+
+\end{document} 
