@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/MacPorts 2010_1) (format=pdflatex 2011.1.28)  3 FEB 2011 15:28
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/MacPorts 2010_3) (format=pdflatex 2011.4.7)  7 APR 2011 15:33
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -423,7 +423,7 @@ Overfull \hbox (18.34999pt too wide) in paragraph at lines 255--256
 AED: lastpage setting LastPage [7] [8] (./X Web.aux) ) 
 Here is how much of TeX's memory you used:
  404 strings out of 493747
- 4665 string characters out of 3143115
+ 4665 string characters out of 3143116
  54638 words of memory out of 3000000
  3754 multiletter control sequences out of 15000+200000
  9510 words of font info for 33 fonts, out of 3000000 for 9000

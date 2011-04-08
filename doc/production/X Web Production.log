@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/MacPorts 2010_3) (format=pdflatex 2011.4.7)  7 APR 2011 14:21
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/MacPorts 2010_3) (format=pdflatex 2011.4.7)  7 APR 2011 15:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -73,12 +73,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 25.
-
-Underfull \hbox (badness 4341) in paragraph at lines 34--35
-\OT1/cmr/m/n/10 stance of your ap-pli-ca-tion and as-so-ci-ated
- []
-
-[1{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
@@ -113,7 +108,7 @@ c/amsfonts/cm/cmr12.pfb></opt/local/share/texmf-texlive-dist/fonts/type1/public
 amsfonts/cm/cmsl10.pfb></opt/local/share/texmf-texlive-dist/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texlive-dist/fonts/type1/public/
 amsfonts/cm/cmti10.pfb>
-Output written on "X Web Production.pdf" (2 pages, 106854 bytes).
+Output written on "X Web Production.pdf" (2 pages, 106863 bytes).
 PDF statistics:
  43 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream

@@ -10283,3 +10283,23 @@ Started GET "/" for 127.0.0.1 at 2011-04-01 13:33:53 -0700
   [1m[35mSong Load (0.4ms)[0m  SELECT "songs".* FROM "songs" WHERE ("songs".album_id = 477772384)
 Rendered albums/index.html.erb within layouts/application (4.6ms)
 Completed 200 OK in 76ms (Views: 8.9ms | ActiveRecord: 0.8ms)
+Starting the New Relic Agent.
+NewRelic Agent Developer Mode enabled.
+To view performance information, go to http://localhost:3000/newrelic
+DEPRECATION WARNING: RAILS_ENV is deprecated. Please use ::Rails.env. (called from <top (required)> at /Users/preston/Developer/git/xweb/config/environment.rb:5)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-07 15:13:59 -0700
+  Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (1.8ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mSong Load (53.9ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE ("songs".album_id IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100))[0m
+Rendered albums/index.html.erb within layouts/application (135.5ms)
+Completed 200 OK in 356ms (Views: 140.1ms | ActiveRecord: 55.7ms)
